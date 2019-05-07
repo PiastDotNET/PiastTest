@@ -19,8 +19,8 @@ namespace PiastTest.Converters
         {
             return new PlayerDTO()
             {
-                Name = model.Surname,
-                Surname = model.Name,
+                Name = model.Name,
+                Surname = model.Surname,
                 Number = model.Number
             };
         }

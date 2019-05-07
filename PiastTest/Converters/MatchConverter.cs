@@ -14,7 +14,7 @@ namespace PiastTest.Converters
         {
             return new Match()
             {
-                Hosts = _teamConverter.Convert(dto.Guests),
+                Hosts = _teamConverter.Convert(dto.Hosts),
                 Guests = _teamConverter.Convert(dto.Guests)
             };
         }
@@ -24,7 +24,7 @@ namespace PiastTest.Converters
             return new MatchDTO()
             {
                 Hosts = _teamConverter.Convert(model.Hosts),
-                Guests = _teamConverter.Convert(model.Hosts)
+                Guests = _teamConverter.Convert(model.Guests)
             };
         }
     }
