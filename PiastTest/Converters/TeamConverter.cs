@@ -26,7 +26,7 @@ namespace PiastTest.Converters
         {
             var result =  new TeamDTO()
             {
-                Score = 0, //TODO Poprawic
+                Score = model.Score,
                 Players = model.Players.Select(x=>_playerConverter.Convert(x))
             };
 
